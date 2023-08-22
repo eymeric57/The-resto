@@ -1,0 +1,35 @@
+.header-container{
+    text-align: center;
+    margin-top: 200px;
+
+    h2{
+        font-family: allura;
+        font-size: 3.5rem;
+        color: rgba(192, 115, 43, 0.603);
+        font-weight: 200;
+        margin: 0;
+    }
+    h3{
+        margin-top: -35px;
+        font-size: 4rem;
+        color: $white1;
+        font-family: poppins;
+        text-transform: uppercase;
+        letter-spacing: 15px;
+    }
+    img{
+        margin-top: 40px;
+       color: $white1;
+       height: 30px;
+    }
+
+    p{
+        margin-top: 42px;
+        color: $white1;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        font-family: roboto;
+        letter-spacing: 8px;
+        font-weight: 400;
+    }
+}

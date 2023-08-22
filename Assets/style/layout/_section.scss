@@ -1,0 +1,21 @@
+section#store{
+
+    .discover-store {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 550px;
+        width: 100%;
+
+        .store-left{
+          
+        }
+        .store-right {
+            background: url(/Assets/img/store-01.jpg) cover;
+            
+           
+            
+            
+        }
+        
+    }
+}
