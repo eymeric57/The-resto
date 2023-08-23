@@ -183,7 +183,6 @@ section#discover .top-discover {
   background-color: rgba(14, 13, 13, 0.87);
   height: 490px;
   text-align: center;
-  position: relative;
 }
 section#discover .top-discover h5 {
   padding-top: 50px;
@@ -197,49 +196,56 @@ section#discover .top-discover img#plate2 {
   height: 40px;
 }
 section#discover .back-container {
+  width: 100%;
   background: url(/Assets/img/bg-menu-01.jpg);
+  position: relative;
+  height: 810px;
+  background-size: cover;
 }
-section#discover .back-container .food-container {
+section#discover .food-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   background: white;
   width: 52%;
-  margin: 0 auto;
+  position: absolute;
+  margin-top: -180px;
+  margin-left: 457px;
+  padding-bottom: 18px;
 }
-section#discover .back-container .food-container .italian {
+section#discover .food-container .food {
   display: grid;
   grid-template-columns: 25% 60% 15%;
   width: 90%;
   margin: auto;
   height: 205px;
-  border-bottom: dashed 1px;
+  border-bottom: dashed 1px rgba(128, 128, 128, 0.671);
 }
-section#discover .back-container .food-container .italian .left-it {
+section#discover .food-container .food .left-it {
   width: 25%;
 }
-section#discover .back-container .food-container .italian .left-it img {
+section#discover .food-container .food .left-it img {
   border-radius: 100px;
   height: 112px;
   margin-top: 55px;
 }
-section#discover .back-container .food-container .italian .right-it {
+section#discover .food-container .food .right-it {
   width: 85%;
   margin-top: 78px;
   margin-left: 10px;
 }
-section#discover .back-container .food-container .italian h6 {
+section#discover .food-container .food h6 {
   font-size: 1rem;
   font-family: roboto;
   text-transform: uppercase;
 }
-section#discover .back-container .food-container .italian p#recipe {
+section#discover .food-container .food p#recipe {
   margin-top: 8px;
   font-size: 1.2rem;
   font-family: roboto;
   font-weight: 100;
 }
-section#discover .back-container .food-container .price {
+section#discover .food-container .food .price {
   margin-top: 100px;
   margin-left: 12px;
   font-size: 1.5rem;
@@ -247,4 +253,15 @@ section#discover .back-container .food-container .price {
   font-family: roboto;
   font-weight: 700;
   color: rgba(192, 115, 43, 0.603);
+}
+
+section#booking-event {
+  background: rgba(14, 13, 13, 0.87);
+}
+section#booking-event .booking-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 70%;
+  background: white;
+  margin: auto;
 }/*# sourceMappingURL=index.css.map */

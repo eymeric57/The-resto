@@ -1,4 +1,4 @@
-section#store{
+section#store {
 
     .discover-store {
         display: grid;
@@ -6,82 +6,89 @@ section#store{
         width: 100%;
         background: $white1;
 
-        .store-left{
+        .store-left {
             text-align: center;
             border: dashed 1px;
             color: $doré;
-           margin: 20px;
+            margin: 20px;
 
-           h3{
-            font-family: allura;
-            font-size: 2.3rem;
-            font-weight: 500;
-            color: $doré;
-            margin-top: 40px;
+            h3 {
+                font-family: allura;
+                font-size: 2.3rem;
+                font-weight: 500;
+                color: $doré;
+                margin-top: 40px;
 
-           }
-           h4#store{
-            margin-top: -15px;
-            font-size: 1.5rem;
-            font-family: poppins;
-            font-weight: 900;
-            text-transform: uppercase;
-            color: black;
-           }
-           img#couvert2{
-            margin-top: 35px;
-            height: 35px;
-           }
-           p{
-            font-size: 1.2rem;
-            line-height: 25px;
-            color: $black;
-            font-family: roboto;
-            width: 90%;
-            margin: 0 auto;
-            margin-top: 30px;
-           }
-           .chef{
-           img{
-            border-radius: 100px;
-            height: 90px;
-            margin-top: 30px;
-           }
-          h4#russel{
-            margin-top: 10px;
-            font-size: 1.2rem;
-            font-weight: 100;
-            font-family: poppins;
-            color: $black;
-          }
-          p{
-            margin-top: 0px;
-            margin-bottom: 30px;
-            font-family: roboto;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            font-weight: 700;
-            color: rgba(138, 137, 137, 0.493);
-          }
+            }
+
+            h4#store {
+                margin-top: -15px;
+                font-size: 1.5rem;
+                font-family: poppins;
+                font-weight: 900;
+                text-transform: uppercase;
+                color: black;
+            }
+
+            img#couvert2 {
+                margin-top: 35px;
+                height: 35px;
+            }
+
+            p {
+                font-size: 1.2rem;
+                line-height: 25px;
+                color: $black;
+                font-family: roboto;
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 30px;
+            }
+
+            .chef {
+                img {
+                    border-radius: 100px;
+                    height: 90px;
+                    margin-top: 30px;
+                }
+
+                h4#russel {
+                    margin-top: 10px;
+                    font-size: 1.2rem;
+                    font-weight: 100;
+                    font-family: poppins;
+                    color: $black;
+                }
+
+                p {
+                    margin-top: 0px;
+                    margin-bottom: 30px;
+                    font-family: roboto;
+                    text-transform: uppercase;
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                    color: rgba(138, 137, 137, 0.493);
+                }
+            }
         }
-        }
+
         .store-right {
             background: url(/Assets/img/store-01.jpg);
-           background-position: center;
-            
+            background-position: center;
+
         }
-        
+
     }
 }
 
-section#discover{
-    .top-discover{
+section#discover {
+    
+    .top-discover {
         background-color: rgba(14, 13, 13, 0.87);
         height: 490px;
         text-align: center;
-        position: relative;
 
-        h5{
+        h5 {
             padding-top: 50px;
             font-family: allura;
             font-size: 2.5rem;
@@ -89,72 +96,98 @@ section#discover{
             font-weight: 100;
             padding-bottom: 50px;
         }
-        img#plate2{
+
+        img#plate2 {
             height: 40px;
         }
     }
-    .back-container{
-        background: url(/Assets/img/bg-menu-01.jpg);
 
-        .food-container{
+    .back-container {
+        width: 100%;
+        background: url(/Assets/img/bg-menu-01.jpg);
+        position: relative;
+        height: 810px;
+        background-size: cover;
+        
+    }
+
+        .food-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
             background: white;
             width: 52%;
-            margin: 0 auto;
-            
+            position: absolute;
+            margin-top: -180px ;
+            margin-left: 457px;
+            padding-bottom: 18px;
+           
 
-            .italian{
+
+            .food{
                 display: grid;
                 grid-template-columns: 25% 60% 15%;
                 width: 90%;
                 margin: auto;
                 height: 205px;
-                border-bottom: dashed 1px;
-                
-              .left-it{
-                width: 25%;
-                
-                img{
-                    border-radius: 100px;
-                    height: 112px;
-                    margin-top: 55px;
-                    
+                border-bottom: dashed 1px rgba(128, 128, 128, 0.671);
+
+                .left-it {
+                    width: 25%;
+
+                    img {
+                        border-radius: 100px;
+                        height: 112px;
+                        margin-top: 55px;
+                    }
 
                 }
 
-              }
-              .right-it{
-                width: 85%;
-                margin-top: 78px;
-                margin-left: 10px;
+                .right-it {
+                    width: 85%;
+                    margin-top: 78px;
+                    margin-left: 10px;
 
-               
-              }
+
+                }
+
                 h6 {
                     font-size: 1rem;
                     font-family: roboto;
                     text-transform: uppercase;
-                
+
                 }
-                p#recipe{
+
+                p#recipe {
                     margin-top: 8px;
                     font-size: 1.2rem;
                     font-family: roboto;
                     font-weight: 100;
                 }
-            }
-           
-            .price {
-                margin-top:100px;
+            
+
+                .price {
+                margin-top: 100px;
                 margin-left: 12px;
                 font-size: 1.5rem;
                 width: 100%;
                 font-family: roboto;
                 font-weight: 700;
                 color: $doré;
+                 }
+                
             }
         }
     }
-}
+
+    section#booking-event{
+        background: rgba(14, 13, 13, 0.87);
+
+        .booking-container{
+            display: grid;
+            grid-template-columns: 30% 70%;
+            width: 70%;
+            background: white;
+            margin:  auto;
+        }
+    }
