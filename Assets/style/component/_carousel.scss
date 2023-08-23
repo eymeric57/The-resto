@@ -1,12 +1,13 @@
 .slider{
     width: 100%;
-    height: 100vh;
+    height: 99vh;
     animation: animate 20s ease-in-out infinite;
+    background-size: contain;
 }
 
 @keyframes animate {
     0%,100%{
-        background:url(/Assets/img/bg-slider-01.jpg);
+        background:url(/Assets/img/bg-slider-01.jpg) ;
     }
     33% {
         background: url(/Assets/img/bg-slider-05.jpg);
