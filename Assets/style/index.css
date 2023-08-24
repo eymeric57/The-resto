@@ -351,6 +351,131 @@ section#booking-event .booking-container .right-booking-container img#plate-book
   margin-top: 35px;
 }
 
+section#event .event-title {
+  text-align: center;
+}
+section#event .event-title h1 {
+  margin-top: 180px;
+  font-size: 3rem;
+  font-family: allura;
+  color: rgba(223, 146, 74, 0.856);
+  font-weight: 100;
+}
+section#event .event-title h2 {
+  margin-top: -15px;
+  font-size: 2.5rem;
+  font-family: poppins;
+  color: rgb(241, 239, 239);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+section#event .event-title img#plate-event {
+  margin-top: 40px;
+  height: 38px;
+}
+section#event .event-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "one two" "three two";
+  width: 65%;
+  gap: 25px;
+  margin: 40px auto;
+}
+section#event .event-container .first-container {
+  display: grid;
+  grid-template-columns: 39% 61%;
+  grid-auto-rows: auto;
+  width: 98%;
+  margin-left: 15px;
+}
+section#event .event-container .first-container .img {
+  background: url(/Assets/img/event-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 235px;
+}
+section#event .event-container .first-container .img button#date {
+  background: red;
+  border-radius: 0px;
+  display: block;
+  margin-top: 90px;
+  margin: 90px auto;
+  padding: 20px 30px;
+}
+section#event .event-container .first-container .img button#date p#day {
+  font-size: 2.2rem;
+  font-family: roboto;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+section#event .event-container .first-container .img button#date p#month {
+  font-family: roboto;
+  font-weight: 100;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-size: 1.3rem;
+  margin-top: -5px;
+}
+section#event .event-container .first-container .event1 {
+  background: white;
+  height: 235px;
+  width: 100%;
+}
+section#event .second-container {
+  background: url(/Assets/img/event-03.jpg);
+  grid-area: two;
+  height: 100%;
+}
+section#event .second-container .text2cont {
+  background: white;
+  height: 94%;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+section#event .third-container {
+  display: grid;
+  grid-template-columns: 39% 61%;
+  grid-auto-rows: auto;
+  width: 98%;
+  margin-left: 15px;
+}
+section#event .third-container .img {
+  background: url(/Assets/img/event-02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 235px;
+  grid-area: "three";
+}
+section#event .third-container button#date {
+  background: red;
+  border-radius: 0px;
+  display: block;
+  margin-top: 90px;
+  margin: 90px auto;
+  padding: 20px 30px;
+}
+section#event .third-container button#date p#day {
+  font-size: 2.2rem;
+  font-family: roboto;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+section#event .third-container button#date p#month {
+  font-family: roboto;
+  font-weight: 100;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-size: 1.3rem;
+  margin-top: -20px;
+}
+section#event .third-container .event3 {
+  background: white;
+  height: 235px;
+  width: 100%;
+}
+
 form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
