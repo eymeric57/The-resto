@@ -218,24 +218,26 @@
 
 
             <div class="right-booking-container">
-                <h4><span id="res">Reservation</span><span id="onl">Online booking</span></h4>
-                <img src="/Assets/img/ic-plate.png" alt="image fourchette">
+                <h4>Reservation </h4>
+                <h5>Online booking</h5> 
+                <img id="plate-booking" src="/Assets/img/ic-plate.png" alt="image fourchette">
                 <form action="">
-                    <input list="People">
-                    <datalist id="People">
-                        <option value="1">
-                        <option value="2">
-                        <option value="3">
-                        <option value="4">
-                        <option value="5">
-                        <option value="6">
-                        <option value="More">
-                    </datalist>
-                    <input type="date">
-                    <input type="time">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
+                    <select id="People-select"style="width: 200px;" >
+                        <option value="People">People</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="more">More</option>
+                      </select>
+                    <input type="date" style="width: 182px;">
+                    <input type="time"style="width: 182px;">
+                    <input type="text"
+                    placeholder="Name"style="width: 182px;">
+                    <input type="text"placeholder="Phone"style="width: 182px;">
+                    <input type="text"placeholder="Email"style="width: 182px;">
                 </form>
 
                 <div class="book-now">
@@ -244,10 +246,11 @@
             </div>
         </div>
 
-
+<div class="event-title">
         <h1>Upcoming</h1>
         <h2>OUR EVENT</h2>
         <img src="/Assets/img/ic-plate.png" alt="image fourchette">
+</div>
 
         <div class="event-container">
             <div class="first-container">

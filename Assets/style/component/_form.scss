@@ -1,0 +1,49 @@
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 130px;
+    row-gap: 38px;
+    column-gap: 25px;
+    margin-top: 50px;
+    width: 68%;
+    
+    
+}
+select{
+    font-size: 1rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;;
+    border-bottom: solid rgba(128, 128, 128, 0.63) 1px;
+    padding: 10px;
+    background:$white1;
+}
+ input{
+    font-size: 1rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;;
+    border-bottom: solid rgba(128, 128, 128, 0.63) 1px;
+    padding: 10px;
+    background:$white1;
+    align-items: center;
+    margin: 0 auto;
+  
+    
+}
+
+.book-now{
+    margin-top: 50px;
+}
+button{
+    font-size: 1rem;
+    
+    font-weight: 700;
+    background: $black2;
+    color: rgb(247, 245, 245);
+    padding: 21px 45px;
+    border-radius: 50px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border: none;
+}
