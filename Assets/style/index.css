@@ -549,18 +549,18 @@ section#event .third-container .event3 button {
 
 section#pub-ceo {
   background: rgba(14, 13, 13, 0.87);
-  height: 800px;
+  height: 430px;
   position: relative;
 }
 section#pub-ceo .pub {
   width: 65%;
-  top: 100px;
+  top: 320px;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
   background: rgb(241, 239, 239);
-  height: 50%;
+  height: 95%;
   position: absolute;
 }
 section#pub-ceo .pub img {

@@ -566,21 +566,20 @@ section#event {
 
 section#pub-ceo {
     background: $black2;
-    height: 800px;
+    height: 430px;
     position: relative;
-
     
 
     .pub {
+       
         width: 65%;
-        top: 100px;
+        top:320px;
         left: 0;
         right: 0;
         bottom: 0;
         margin: auto;
-
         background: $white1;
-        height: 50%;
+        height: 95%;
         position: absolute;
 
         img{
