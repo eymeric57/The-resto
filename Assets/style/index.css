@@ -92,11 +92,32 @@ nav ul li {
   font-family: roboto;
   font-weight: 100;
   font-size: 0.9rem;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  margin-bottom: 0;
+  height: 17px;
+  padding: 10px;
 }
-nav ul li i {
+nav ul li:hover {
+  scale: 1.4;
+  cursor: pointer;
+}
+nav ul i {
   color: rgb(241, 239, 239);
-  padding-left: 20px;
+  margin-left: 20px;
   font-size: 1rem;
+  margin-top: 45px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 15px;
+  padding: 5px;
+}
+nav ul i:hover {
+  scale: 1.3;
+  cursor: pointer;
+  border: solid 1px black;
+  border-radius: 100px;
+  background: rgba(14, 13, 13, 0.87);
 }
 
 nav#second ul {
@@ -111,6 +132,11 @@ nav#second ul li {
   -webkit-text-decoration: underline 1px rgb(245, 239, 239);
           text-decoration: underline 1px rgb(245, 239, 239);
   text-underline-offset: 15px;
+}
+
+li:hover {
+  scale: 1.2;
+  cursor: pointer;
 }
 
 section#store .discover-store {
@@ -552,7 +578,7 @@ section#pub-ceo {
   height: 430px;
   position: relative;
 }
-section#pub-ceo .pub {
+section#pub-ceo .pub1 {
   width: 65%;
   top: 320px;
   left: 0;
@@ -563,7 +589,7 @@ section#pub-ceo .pub {
   height: 95%;
   position: absolute;
 }
-section#pub-ceo .pub img {
+section#pub-ceo .pub1 img {
   border-radius: 100px;
   height: 70px;
   margin: -40px auto -30px;

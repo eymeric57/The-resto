@@ -570,8 +570,7 @@ section#pub-ceo {
     position: relative;
     
 
-    .pub {
-       
+    .pub1{
         width: 65%;
         top:320px;
         left: 0;
@@ -581,6 +580,8 @@ section#pub-ceo {
         background: $white1;
         height: 95%;
         position: absolute;
+       
+       
 
         img{
            
@@ -588,6 +589,7 @@ section#pub-ceo {
             height: 70px;
             margin: -40px auto -30px;
             display: block;
+           
         }
         }
 
@@ -618,4 +620,8 @@ section#pub-ceo {
             color: $doré;
             
         }
-    }
+
+        
+        
+        }
+    

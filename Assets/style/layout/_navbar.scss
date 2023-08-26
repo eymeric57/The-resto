@@ -5,6 +5,8 @@ ul{
     color: white;
     width: 70%;
     margin: 0 auto;
+    
+    
     h1{
         margin-top: 25px;
         font-family: allura;
@@ -18,11 +20,36 @@ ul{
         font-family: roboto;
         font-weight: 100;
         font-size: 0.9rem;
+        transition: 0.8s;
+        margin-bottom: 0;
         
-        i{
-            color: $white1;
-            padding-left: 20px;
-            font-size: 1rem;
+
+        height: 17px;
+        padding: 10px;
+
+        &:hover{
+            scale: 1.4;
+            cursor: pointer;
+        }
+        
+      
+    }
+    i{
+        color: $white1;
+        margin-left: 20px;
+        font-size: 1rem;
+        margin-top: 45px;
+        transition: 0.5s;
+        
+        height: 15px;
+        padding: 5px;
+
+        &:hover{
+           scale: 1.3;
+            cursor: pointer;
+            border: solid 1px black;
+            border-radius: 100px;
+            background: $black2;
         }
     }
 }
@@ -39,4 +66,9 @@ nav#second{
             text-underline-offset: 15px;
         }
     }
+}
+
+li:hover{
+    scale: 1.2;
+    cursor: pointer;
 }
