@@ -646,6 +646,7 @@ button {
   border: none;
 }
 
-footer .map img {
-  width: 100%;
+footer .map {
+  height: 440px;
+  background: url(/Assets/img/gmap.jpg);
 }/*# sourceMappingURL=index.css.map */
