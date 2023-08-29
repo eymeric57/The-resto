@@ -8,6 +8,11 @@
         color: rgba(192, 115, 43, 0.603);
         font-weight: 200;
         margin: 0;
+        @media screen and (max-width: 850px){
+            font-size: 2.5rem;
+              
+               
+               }
     }
     h3{
         margin-top: -35px;
@@ -16,6 +21,12 @@
         font-family: poppins;
         text-transform: uppercase;
         letter-spacing: 15px;
+        @media screen and (max-width: 850px){
+           font-size: 2.5rem;
+           margin-top: 30px;
+             
+              
+              }
     }
     img{
         margin-top: 40px;

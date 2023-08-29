@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  background: rgb(241, 239, 239);
+}
+
 .header-container {
   text-align: center;
   margin-top: 200px;
@@ -15,6 +19,11 @@
   font-weight: 200;
   margin: 0;
 }
+@media screen and (max-width: 850px) {
+  .header-container h2 {
+    font-size: 2.5rem;
+  }
+}
 .header-container h3 {
   margin-top: -35px;
   font-size: 4rem;
@@ -22,6 +31,12 @@
   font-family: poppins;
   text-transform: uppercase;
   letter-spacing: 15px;
+}
+@media screen and (max-width: 850px) {
+  .header-container h3 {
+    font-size: 2.5rem;
+    margin-top: 30px;
+  }
 }
 .header-container img {
   margin-top: 40px;
@@ -43,9 +58,7 @@
   height: 99vh;
   -webkit-animation: animate 20s ease-in-out infinite;
           animation: animate 20s ease-in-out infinite;
-  background-size: contain;
 }
-
 @-webkit-keyframes animate {
   0%, 100% {
     background: url(/Assets/img/bg-slider-01.jpg);
@@ -57,7 +70,6 @@
     background: url(/Assets/img/bg-slider-06.jpg);
   }
 }
-
 @keyframes animate {
   0%, 100% {
     background: url(/Assets/img/bg-slider-01.jpg);
@@ -69,7 +81,26 @@
     background: url(/Assets/img/bg-slider-06.jpg);
   }
 }
-nav ul {
+@media screen and (max-width: 1050px) {
+  @-webkit-keyframes animate {
+    0%, 100% {
+      background: url(/Assets/img/bg-slider-06.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  @keyframes animate {
+    0%, 100% {
+      background: url(/Assets/img/bg-slider-06.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.slider nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,13 +111,13 @@ nav ul {
   width: 70%;
   margin: 0 auto;
 }
-nav ul h1 {
+.slider nav ul h1 {
   margin-top: 25px;
   font-family: allura;
   font-size: 3rem;
   margin-right: 50px;
 }
-nav ul li {
+.slider nav ul li {
   list-style: none;
   margin-top: 45px;
   font-family: roboto;
@@ -98,11 +129,16 @@ nav ul li {
   height: 17px;
   padding: 10px;
 }
-nav ul li:hover {
+@media screen and (max-width: 850px) {
+  .slider nav ul li {
+    display: none;
+  }
+}
+.slider nav ul li:hover {
   scale: 1.4;
   cursor: pointer;
 }
-nav ul i {
+.slider nav ul i {
   color: rgb(241, 239, 239);
   margin-left: 20px;
   font-size: 1rem;
@@ -112,7 +148,7 @@ nav ul i {
   height: 15px;
   padding: 5px;
 }
-nav ul i:hover {
+.slider nav ul i:hover {
   scale: 1.3;
   cursor: pointer;
   border: solid 1px black;
@@ -124,7 +160,17 @@ nav#second ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
   width: 50%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 850px) {
+  nav#second ul {
+    width: 80%;
+  }
 }
 nav#second ul li {
   font-size: 1.2rem;
@@ -132,6 +178,18 @@ nav#second ul li {
   -webkit-text-decoration: underline 1px rgb(245, 239, 239);
           text-decoration: underline 1px rgb(245, 239, 239);
   text-underline-offset: 15px;
+  font-family: roboto;
+  font-weight: 100;
+  list-style: none;
+  margin-top: 40px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+@media screen and (max-width: 850px) {
+  nav#second ul li {
+    font-size: 1rem;
+    width: 80%;
+  }
 }
 
 li:hover {
@@ -144,6 +202,11 @@ section#store .discover-store {
   grid-template-columns: 1fr 1fr;
   width: 100%;
   background: rgb(241, 239, 239);
+}
+@media screen and (max-width: 850px) {
+  section#store .discover-store {
+    display: block;
+  }
 }
 section#store .discover-store .store-left {
   text-align: center;
@@ -204,11 +267,21 @@ section#store .discover-store .store-right {
   background: url(/Assets/img/store-01.jpg);
   background-position: center;
 }
+@media screen and (max-width: 850px) {
+  section#store .discover-store .store-right {
+    display: none;
+  }
+}
 
 section#discover .top-discover {
   background-color: rgba(14, 13, 13, 0.87);
   height: 490px;
   text-align: center;
+}
+@media screen and (max-width: 850px) {
+  section#discover .top-discover {
+    height: 800px;
+  }
 }
 section#discover .top-discover h5 {
   padding-top: 50px;
@@ -228,7 +301,8 @@ section#discover .back-container {
   height: 810px;
   background-size: cover;
 }
-section#discover .food-container {
+
+.food-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -239,7 +313,16 @@ section#discover .food-container {
   margin-left: 457px;
   padding-bottom: 18px;
 }
-section#discover .food-container .food {
+@media screen and (max-width: 1050px) {
+  .food-container {
+    display: block;
+    margin: 0 50px 0 50px;
+    width: 80%;
+    margin-top: -500px;
+  }
+}
+
+.food {
   display: grid;
   grid-template-columns: 25% 60% 15%;
   width: 90%;
@@ -247,31 +330,52 @@ section#discover .food-container .food {
   height: 205px;
   border-bottom: dashed 1px rgba(128, 128, 128, 0.671);
 }
-section#discover .food-container .food .left-it {
+@media screen and (max-width: 850px) {
+  .food {
+    height: 150px;
+  }
+}
+.food .left-it {
   width: 25%;
 }
-section#discover .food-container .food .left-it img {
+.food .left-it img {
   border-radius: 100px;
   height: 112px;
   margin-top: 55px;
 }
-section#discover .food-container .food .right-it {
+@media screen and (max-width: 850px) {
+  .food .left-it img {
+    height: 80px;
+    margin-top: 25px;
+  }
+}
+.food .right-it {
   width: 85%;
   margin-top: 78px;
   margin-left: 10px;
 }
-section#discover .food-container .food h6 {
+@media screen and (max-width: 850px) {
+  .food .right-it {
+    margin-top: 30px;
+  }
+}
+.food h6 {
   font-size: 1rem;
   font-family: roboto;
   text-transform: uppercase;
 }
-section#discover .food-container .food p#recipe {
+@media screen and (max-width: 850px) {
+  .food h6 {
+    font-size: 0.9rem;
+  }
+}
+.food p#recipe {
   margin-top: 8px;
   font-size: 1.2rem;
   font-family: roboto;
   font-weight: 100;
 }
-section#discover .food-container .food .price {
+.food .price {
   margin-top: 100px;
   margin-left: 12px;
   font-size: 1.5rem;
@@ -280,10 +384,20 @@ section#discover .food-container .food .price {
   font-weight: 700;
   color: rgba(223, 146, 74, 0.856);
 }
+@media screen and (max-width: 850px) {
+  .food .price {
+    font-size: 1.2rem;
+  }
+}
 
 section#booking-event {
   background: rgba(14, 13, 13, 0.87);
   height: 880px;
+}
+@media screen and (max-width: 850px) {
+  section#booking-event {
+    height: 1332px;
+  }
 }
 section#booking-event .booking-container {
   display: grid;
@@ -292,6 +406,15 @@ section#booking-event .booking-container {
   margin: auto;
   height: 600px;
   padding-top: 100px;
+}
+@media screen and (max-width: 850px) {
+  section#booking-event .booking-container {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 60px;
+    width: 90%;
+  }
 }
 section#booking-event .booking-container .left-booking-container-big {
   background: rgb(15, 15, 15);
@@ -361,12 +484,22 @@ section#booking-event .booking-container .right-booking-container {
   background: rgb(241, 239, 239);
   text-align: center;
 }
+@media screen and (max-width: 850px) {
+  section#booking-event .booking-container .right-booking-container {
+    height: 600px;
+  }
+}
 section#booking-event .booking-container .right-booking-container h4 {
   font-family: allura;
   font-size: 3rem;
   font-weight: 100;
   color: rgba(223, 146, 74, 0.856);
   margin-top: 95px;
+}
+@media screen and (max-width: 850px) {
+  section#booking-event .booking-container .right-booking-container h4 {
+    margin: 0 auto;
+  }
 }
 section#booking-event .booking-container .right-booking-container h5 {
   font-family: poppins;
@@ -381,6 +514,11 @@ section#booking-event .booking-container .right-booking-container img#plate-book
 section#event {
   height: 750px;
   background: rgba(14, 13, 13, 0.87);
+}
+@media screen and (max-width: 850px) {
+  section#event {
+    display: none;
+  }
 }
 section#event .event-title {
   text-align: center;
@@ -727,6 +865,16 @@ form {
   margin-top: 50px;
   width: 68%;
 }
+@media screen and (max-width: 1700px) {
+  form {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1525px) {
+  form {
+    display: block;
+  }
+}
 
 select {
   font-size: 1rem;
@@ -751,6 +899,11 @@ input {
           align-items: center;
   margin: 0 auto;
 }
+@media screen and (max-width: 850px) {
+  input {
+    padding: 20px;
+  }
+}
 
 .book-now {
   margin-top: 50px;
@@ -768,6 +921,12 @@ input {
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
+@media screen and (max-width: 850px) {
+  .book-now button {
+    font-size: 0.8rem;
+    padding: 10px 25px;
+  }
+}
 .book-now button:hover {
   scale: 1.2;
   cursor: pointer;
@@ -784,6 +943,11 @@ footer .map {
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: start;
+}
+@media screen and (max-width: 850px) {
+  .baniere-footer {
+    display: block;
+  }
 }
 .baniere-footer .end-text {
   color: white;

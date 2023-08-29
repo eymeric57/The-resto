@@ -6,6 +6,15 @@ form{
     column-gap: 25px;
     margin-top: 50px;
     width: 68%;
+    @media screen and (max-width: 1700px){
+    margin: 0 auto;
+    
+    }
+    @media screen and (max-width: 1525px){
+       display: block;
+        
+        }
+       
     
     
 }
@@ -28,6 +37,11 @@ select{
     background:$white1;
     align-items: center;
     margin: 0 auto;
+    @media screen and (max-width: 850px){
+       
+        padding: 20px;
+        
+    }
   
     
 }
@@ -37,7 +51,6 @@ select{
 
 button{
     font-size: 1rem;
-    
     font-weight: 700;
     background: $black2;
     color: rgb(247, 245, 245);
@@ -47,9 +60,16 @@ button{
     text-transform: uppercase;
     border: none;
     transition: 0.8s;
+    @media screen and (max-width: 850px){
+        font-size: 0.8rem;
+        padding: 10px 25px;
+       
+       
+    }
 &:hover{
     scale: 1.2;
     cursor: pointer;
 }   
 }
 }
+

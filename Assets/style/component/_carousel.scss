@@ -2,17 +2,42 @@
     width: 100%;
     height: 99vh;
     animation: animate 20s ease-in-out infinite;
-    background-size: contain;
-}
 
-@keyframes animate {
+
+@keyframes animate  {
+
     0%,100%{
-        background:url(/Assets/img/bg-slider-01.jpg) ;
+        background:url(/Assets/img/bg-slider-01.jpg)  ;
+    
+         
     }
     33% {
         background: url(/Assets/img/bg-slider-05.jpg);
+       
     }
     66%{
         background: url(/Assets/img/bg-slider-06.jpg);
+       
     }
+   
+    
 }
+@media screen and (max-width: 1050px){
+    @keyframes animate  {
+     
+     0%,100%{
+         background:url(/Assets/img/bg-slider-06.jpg) ;
+         background-position: center;
+         background-size: cover ;
+         background-repeat: no-repeat;
+     
+          
+     } 
+     
+ }
+        
+           
+            
+            }
+ }
+

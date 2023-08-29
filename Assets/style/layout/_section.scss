@@ -5,12 +5,16 @@ section#store {
         grid-template-columns: 1fr 1fr;
         width: 100%;
         background: $white1;
-
+        @media screen and (max-width: 850px){
+            display: block;
+            
+                }
         .store-left {
             text-align: center;
             border: dashed 1px;
             color: $doré;
             margin: 20px;
+           
 
             h3 {
                 font-family: allura;
@@ -50,6 +54,7 @@ section#store {
                     border-radius: 100px;
                     height: 90px;
                     margin-top: 30px;
+                    
                 }
 
                 h4#russel {
@@ -75,6 +80,10 @@ section#store {
         .store-right {
             background: url(/Assets/img/store-01.jpg);
             background-position: center;
+            @media screen and (max-width: 850px){
+                display: none;
+                   
+                    }
 
         }
 
@@ -87,6 +96,9 @@ section#discover {
         background-color: rgba(14, 13, 13, 0.87);
         height: 490px;
         text-align: center;
+        @media screen and (max-width: 850px){
+            height: 800px;
+        }
 
         h5 {
             padding-top: 50px;
@@ -109,7 +121,11 @@ section#discover {
         height: 810px;
         background-size: cover;
 
-    }
+                             
+                    }
+                    
+         }
+
 
     .food-container {
         display: grid;
@@ -121,6 +137,15 @@ section#discover {
         margin-top: -180px;
         margin-left: 457px;
         padding-bottom: 18px;
+        @media screen and (max-width: 1050px){
+            display: block; 
+            margin: 0 50px 0 50px ;
+            width: 80%;
+            margin-top: -500px;
+             
+         }
+                        
+                    }
 
 
 
@@ -131,6 +156,9 @@ section#discover {
             margin: auto;
             height: 205px;
             border-bottom: dashed 1px rgba(128, 128, 128, 0.671);
+            @media screen and (max-width: 850px){
+                height: 150px;
+            }
 
             .left-it {
                 width: 25%;
@@ -139,6 +167,10 @@ section#discover {
                     border-radius: 100px;
                     height: 112px;
                     margin-top: 55px;
+                    @media screen and (max-width: 850px){
+                        height: 80px;
+                        margin-top: 25px;
+                    }
                 }
 
             }
@@ -147,6 +179,9 @@ section#discover {
                 width: 85%;
                 margin-top: 78px;
                 margin-left: 10px;
+                @media screen and (max-width: 850px){
+                    margin-top: 30px;
+                }
 
 
             }
@@ -155,6 +190,9 @@ section#discover {
                 font-size: 1rem;
                 font-family: roboto;
                 text-transform: uppercase;
+                @media screen and (max-width: 850px){
+                    font-size: 0.9rem;
+                }
 
             }
 
@@ -174,15 +212,21 @@ section#discover {
                 font-family: roboto;
                 font-weight: 700;
                 color: $doré;
+                @media screen and (max-width: 850px){
+                    font-size: 1.2rem;
+                }
             }
 
         }
-    }
-}
+    
 
 section#booking-event {
     background: rgba(14, 13, 13, 0.87);
     height: 880px;
+    @media screen and (max-width: 850px){
+        height: 1332px;
+         
+         }
 
 
     .booking-container {
@@ -192,6 +236,15 @@ section#booking-event {
         margin: auto;
         height: 600px;
         padding-top: 100px;
+        @media screen and (max-width: 850px){
+            display: block;
+            height: auto;
+            margin: 0 auto;
+            padding-top: 60px;
+            width: 90%;
+            
+             
+             }
 
 
 
@@ -201,9 +254,11 @@ section#booking-event {
             color: white;
             text-align: center;
             padding: 30px;
+            
 
             .left-booking-container {
                 border: dashed white 1px;
+             
 
                 h1 {
                     margin-top: 25px;
@@ -282,6 +337,9 @@ section#booking-event {
         .right-booking-container {
             background: $white1;
             text-align: center;
+            @media screen and (max-width: 850px){
+               height: 600px;
+            }
 
             h4 {
                 font-family: allura;
@@ -289,6 +347,11 @@ section#booking-event {
                 font-weight: 100;
                 color: $doré;
                 margin-top: 95px;
+                @media screen and (max-width: 850px){
+
+                    margin: 0 auto;
+                     
+                     }
             }
 
             h5 {
@@ -313,6 +376,9 @@ section#booking-event {
 section#event {
     height: 750px;
     background: $black2;
+    @media screen and (max-width: 850px){
+        display: none;
+    }
 
     .event-title {
         text-align: center;
