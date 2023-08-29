@@ -7,6 +7,9 @@ ul{
     color: white;
     width: 70%;
     margin: 0 auto;
+    @media screen and (max-width: 850px){
+        width: 70%;  
+    }
     
     
     h1{
@@ -47,6 +50,12 @@ ul{
         transition: 0.5s;
         height: 15px;
         padding: 5px;
+        @media screen and (max-width: 850px){
+            width: 20px;
+            text-align: end;
+            padding: 0;
+        
+        }
        
 
         &:hover{

@@ -14,6 +14,7 @@ footer{
     text-align: start;
     @media screen and (max-width: 850px){
         display: block;
+        height: 355px;
     }
     
 
@@ -26,6 +27,9 @@ footer{
         font-size: 1.2rem;
         font-family: roboto;
         line-height: 35px;
+        @media screen and (max-width: 850px){
+            display: none;
+        }
 
         h1{
             color: $doré;
