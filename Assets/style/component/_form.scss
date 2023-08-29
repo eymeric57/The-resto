@@ -34,7 +34,7 @@ select{
 
 .book-now{
     margin-top: 50px;
-}
+
 button{
     font-size: 1rem;
     
@@ -46,4 +46,10 @@ button{
     letter-spacing: 5px;
     text-transform: uppercase;
     border: none;
+    transition: 0.8s;
+&:hover{
+    scale: 1.2;
+    cursor: pointer;
+}   
+}
 }

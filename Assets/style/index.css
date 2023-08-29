@@ -90,7 +90,7 @@ nav ul li {
   list-style: none;
   margin-top: 45px;
   font-family: roboto;
-  font-weight: 100;
+  font-weight: 700;
   font-size: 0.9rem;
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -232,7 +232,7 @@ section#discover .food-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  background: white;
+  background: rgb(241, 239, 239);
   width: 52%;
   position: absolute;
   margin-top: -180px;
@@ -415,11 +415,14 @@ section#event .event-container {
   margin: 40px auto;
 }
 section#event .event-container button#date {
-  background: rgb(51, 49, 49);
   border-radius: 0px;
   display: block;
   margin: 66px auto;
   padding: 22px 33px;
+  border: none;
+  font-size: 1rem;
+  color: rgb(241, 239, 239);
+  background: black;
 }
 section#event .event-container button#date p#day {
   font-size: 2.2rem;
@@ -449,8 +452,7 @@ section#event .event-container .first-container .img {
   height: 235px;
 }
 section#event .event-container .first-container .event1 {
-  background: white;
-  height: 235px;
+  background: rgb(241, 239, 239);
   width: 100%;
 }
 section#event .event-container .first-container .event1 h1 {
@@ -473,18 +475,54 @@ section#event .event-container .first-container .event1 p i {
   font-size: 0.8rem;
 }
 section#event .event-container .first-container .event1 button#eventbtn {
-  margin-top: 15px;
+  margin-top: 30px;
   background: none;
   color: rgb(15, 15, 15);
-  margin-left: -20px;
   font-weight: 100;
+  font-size: 1rem;
+  margin-left: 20px;
+  border: none;
+  font-weight: 600;
+  color: rgb(88, 88, 88);
+  letter-spacing: 2px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+section#event .event-container .first-container .event1 button#eventbtn:hover {
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(lightgrey), color-stop(1%, lightgrey), color-stop(26%, #e0e0e0), color-stop(48%, #efefef), color-stop(75%, #d9d9d9), to(#bcbcbc));
+  background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+  width: 80%;
+  margin-left: 12px;
+  text-align: start;
+  -webkit-animation: hoveranim 1s ease-in-out;
+          animation: hoveranim 1s ease-in-out;
+  border-radius: 50px;
+  padding: 8px;
+  margin-top: 22px;
+}
+@-webkit-keyframes hoveranim {
+  0% {
+    width: 30%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes hoveranim {
+  0% {
+    width: 30%;
+  }
+  100% {
+    width: 80%;
+  }
 }
 section#event .second-container {
   background: url(/Assets/img/event-03.jpg);
   grid-area: two;
 }
 section#event .second-container .text2cont {
-  background: white;
+  background: rgb(241, 239, 239);
   margin: 30px;
 }
 section#event .second-container button#date {
@@ -495,6 +533,7 @@ section#event .second-container button#date p#month {
 }
 section#event .second-container .event2 {
   text-align: center;
+  background-color: rgb(241, 239, 239);
 }
 section#event .second-container .event2 h1 {
   font-family: roboto;
@@ -520,33 +559,61 @@ section#event .second-container .event2 button#eventbutton {
   margin-top: 95px;
   background: none;
   color: rgb(15, 15, 15);
-  margin-left: -20px;
-  margin-bottom: 10px;
   font-weight: 100;
+  font-size: 1rem;
+  border: none;
+  font-weight: 600;
+  color: rgb(88, 88, 88);
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
-section#event .third-container {
+section#event .second-container .event2 button#eventbutton:hover {
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(lightgrey), color-stop(1%, lightgrey), color-stop(26%, #e0e0e0), color-stop(48%, #efefef), color-stop(75%, #d9d9d9), to(#bcbcbc));
+  background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+  width: 80%;
+  text-align: center;
+  -webkit-animation: hoveranim 1s ease-in-out;
+          animation: hoveranim 1s ease-in-out;
+  border-radius: 50px;
+  padding: 8px;
+  margin-top: 87px;
+  margin-bottom: 42px;
+}
+@keyframes hoveranim {
+  0% {
+    width: 30%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+.third-container {
   display: grid;
   grid-template-columns: 39% 61%;
   grid-auto-rows: auto;
   width: 98%;
   margin-left: 15px;
 }
-section#event .third-container .img {
+.third-container .img {
   background: url(/Assets/img/event-02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 235px;
   grid-area: "three";
 }
-section#event .third-container button#date p#month {
+.third-container button#date p#month {
   margin-top: -25px;
 }
-section#event .third-container .event3 {
-  background: white;
+.third-container .event3 {
+  background: rgb(241, 239, 239);
   height: 235px;
   width: 100%;
 }
-section#event .third-container .event3 h1 {
+.third-container .event3 h1 {
   font-size: 1.5rem;
   font-weight: 100;
   padding: 20px;
@@ -554,7 +621,7 @@ section#event .third-container .event3 h1 {
   font-family: roboto;
   margin-left: 15px;
 }
-section#event .third-container .event3 p {
+.third-container .event3 p {
   margin-top: 10px;
   font-size: 1.1rem;
   font-family: roboto;
@@ -562,15 +629,44 @@ section#event .third-container .event3 p {
   margin-left: 20px;
   letter-spacing: 2px;
 }
-section#event .third-container .event3 p i {
+.third-container .event3 p i {
   font-size: 0.8rem;
 }
-section#event .third-container .event3 button {
-  margin-top: 15px;
+.third-container .event3 button {
+  margin-top: 30px;
   background: none;
   color: rgb(15, 15, 15);
   margin-left: -20px;
   font-weight: 100;
+  font-size: 1rem;
+  margin-left: 20px;
+  border: none;
+  font-weight: 600;
+  color: rgb(88, 88, 88);
+  letter-spacing: 2px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+.third-container .event3 button:hover {
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(lightgrey), color-stop(1%, lightgrey), color-stop(26%, #e0e0e0), color-stop(48%, #efefef), color-stop(75%, #d9d9d9), to(#bcbcbc));
+  background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+  width: 80%;
+  margin-left: 12px;
+  text-align: start;
+  -webkit-animation: hoveranim 1s ease-in-out;
+          animation: hoveranim 1s ease-in-out;
+  border-radius: 50px;
+  padding: 8px;
+  margin-top: 22px;
+}
+@keyframes hoveranim {
+  0% {
+    width: 30%;
+  }
+  100% {
+    width: 80%;
+  }
 }
 
 section#pub-ceo {
@@ -659,8 +755,7 @@ input {
 .book-now {
   margin-top: 50px;
 }
-
-button {
+.book-now button {
   font-size: 1rem;
   font-weight: 700;
   background: rgba(14, 13, 13, 0.87);
@@ -670,6 +765,12 @@ button {
   letter-spacing: 5px;
   text-transform: uppercase;
   border: none;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.book-now button:hover {
+  scale: 1.2;
+  cursor: pointer;
 }
 
 footer .map {
