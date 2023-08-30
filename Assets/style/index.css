@@ -58,27 +58,40 @@ body {
   height: 99vh;
   -webkit-animation: animate 20s ease-in-out infinite;
           animation: animate 20s ease-in-out infinite;
+  background-repeat: no-repeat;
 }
 @-webkit-keyframes animate {
   0%, 100% {
     background: url(/Assets/img/bg-slider-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   33% {
     background: url(/Assets/img/bg-slider-05.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   66% {
     background: url(/Assets/img/bg-slider-06.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @keyframes animate {
   0%, 100% {
     background: url(/Assets/img/bg-slider-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   33% {
     background: url(/Assets/img/bg-slider-05.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   66% {
     background: url(/Assets/img/bg-slider-06.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -134,7 +147,12 @@ body {
   height: 17px;
   padding: 10px;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
+  .slider nav ul li {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 870px) {
   .slider nav ul li {
     display: none;
   }
@@ -278,6 +296,7 @@ section#store .discover-store .store-left .chef p {
 section#store .discover-store .store-right {
   background: url(/Assets/img/store-01.jpg);
   background-position: center;
+  background-size: cover;
 }
 @media screen and (max-width: 850px) {
   section#store .discover-store .store-right {
@@ -313,6 +332,11 @@ section#discover .back-container {
   height: 810px;
   background-size: cover;
 }
+@media screen and (max-width: 1050px) {
+  section#discover .back-container {
+    height: 1100px;
+  }
+}
 
 .food-container {
   display: grid;
@@ -321,9 +345,11 @@ section#discover .back-container {
   background: rgb(241, 239, 239);
   width: 52%;
   position: absolute;
-  margin-top: -180px;
-  margin-left: 457px;
-  padding-bottom: 18px;
+  top: -180px;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+  margin: auto;
 }
 @media screen and (max-width: 1650px) {
   .food-container {
@@ -338,7 +364,6 @@ section#discover .back-container {
   .food-container {
     display: block;
     width: 80%;
-    top: -480px;
   }
 }
 
@@ -431,6 +456,11 @@ section#booking-event .booking-container {
   margin: auto;
   height: 600px;
   padding-top: 100px;
+}
+@media screen and (max-width: 1050px) {
+  section#booking-event .booking-container {
+    grid-template-columns: 40% 70%;
+  }
 }
 @media screen and (max-width: 850px) {
   section#booking-event .booking-container {
@@ -540,7 +570,7 @@ section#event {
   height: 750px;
   background: rgba(14, 13, 13, 0.87);
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 970px) {
   section#event {
     display: none;
   }
@@ -697,7 +727,6 @@ section#event .second-container button#date p#month {
 section#event .second-container .event2 {
   text-align: center;
   background-color: rgb(241, 239, 239);
-  margin-bottom: 20px;
 }
 section#event .second-container .event2 h1 {
   font-family: roboto;
@@ -708,6 +737,11 @@ section#event .second-container .event2 h1 {
   margin-top: -15px;
   letter-spacing: 1px;
 }
+@media screen and (max-width: 1100px) {
+  section#event .second-container .event2 h1 {
+    font-size: 1.4rem;
+  }
+}
 section#event .second-container .event2 p {
   margin-top: 30px;
   font-size: 1.1rem;
@@ -716,11 +750,16 @@ section#event .second-container .event2 p {
   margin-left: 20px;
   letter-spacing: 2px;
 }
+@media screen and (max-width: 1100px) {
+  section#event .second-container .event2 p {
+    font-size: 1rem;
+  }
+}
 section#event .second-container .event2 p i {
   font-size: 0.8rem;
 }
 section#event .second-container .event2 button#eventbutton {
-  margin-top: 95px;
+  margin-top: 65px;
   background: none;
   color: rgb(15, 15, 15);
   font-weight: 100;
@@ -729,9 +768,10 @@ section#event .second-container .event2 button#eventbutton {
   font-weight: 600;
   color: rgb(88, 88, 88);
   letter-spacing: 2px;
-  margin-bottom: 50px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+  margin-bottom: 30px;
+  height: 100%;
 }
 section#event .second-container .event2 button#eventbutton:hover {
   cursor: pointer;
@@ -932,6 +972,10 @@ select {
   border-bottom: solid rgba(128, 128, 128, 0.63) 1px;
   padding: 10px;
   background: rgb(241, 239, 239);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
 }
 
 input {
@@ -987,6 +1031,9 @@ footer .map {
 
 .baniere-footer {
   background: url(/Assets/img/bg-footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 330PX;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1005,6 +1052,12 @@ footer .map {
   font-size: 1.2rem;
   font-family: roboto;
   line-height: 35px;
+}
+@media screen and (max-width: 1400px) {
+  .baniere-footer .end-text {
+    margin-left: 50px;
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 850px) {
   .baniere-footer .end-text {

@@ -80,6 +80,7 @@ section#store {
         .store-right {
             background: url(/Assets/img/store-01.jpg);
             background-position: center;
+            background-size: cover;
             @media screen and (max-width: 850px){
                 display: none;
                    
@@ -120,6 +121,9 @@ section#discover {
         position: relative;
         height: 810px;
         background-size: cover;
+        @media screen and (max-width: 1050px){
+            height: 1100px;
+        }
 
                              
                     }
@@ -134,9 +138,11 @@ section#discover {
         background: rgb(241, 239, 239);
         width: 52%;
         position: absolute;
-        margin-top: -180px;
-        margin-left: 457px;
-        padding-bottom: 18px;
+        top: -180px;
+        left: 0;
+        right: 0;
+        bottom: 40px;
+        margin: auto;
         @media screen and (max-width: 1650px){
             top: -180px;
         left: 0;
@@ -149,10 +155,6 @@ section#discover {
         @media screen and (max-width: 1050px){
             display: block; 
             width: 80%;
-            top: -480px;
-            
-            
-
              
          }
                         
@@ -253,6 +255,9 @@ section#booking-event {
         margin: auto;
         height: 600px;
         padding-top: 100px;
+        @media screen and (max-width: 1050px){
+            grid-template-columns: 40% 70%;
+        }
         @media screen and (max-width: 850px){
             display: block;
             height: auto;
@@ -393,7 +398,7 @@ section#booking-event {
 section#event {
     height: 750px;
     background: $black2;
-    @media screen and (max-width: 850px){
+    @media screen and (max-width: 970px){
         display: none;
     }
 
@@ -566,9 +571,6 @@ section#event {
         .text2cont {
             background: rgb(241, 239, 239);
             margin: 30px;
-
-
-
         }
 
         button#date {
@@ -583,7 +585,7 @@ section#event {
         .event2 {
             text-align: center;
             background-color: rgb(241, 239, 239);
-            margin-bottom: 20px;
+            
 
             h1 {
                 font-family: roboto;
@@ -593,6 +595,9 @@ section#event {
                 font-weight: 100;
                 margin-top: -15px;
                 letter-spacing: 1px;
+                @media screen and (max-width: 1100px){
+                    font-size: 1.4rem;
+                }
             }
 
             p {
@@ -602,6 +607,9 @@ section#event {
                 color: rgba(128, 128, 128, 0.788);
                 margin-left: 20px;
                 letter-spacing: 2px;
+                @media screen and (max-width: 1100px){
+                    font-size: 1rem;
+                }
 
                 i {
                     font-size: 0.8rem;
@@ -610,19 +618,18 @@ section#event {
 
             button#eventbutton {
                 
-                    margin-top: 95px;
+                    margin-top: 65px;
                     background: none;
                     color: $black;
-                    
                     font-weight: 100;
                     font-size: 1rem;
-                    
                     border: none;
                     font-weight: 600;
                     color: rgb(88, 88, 88);
                     letter-spacing: 2px;
-                    margin-bottom: 50px;
                     transition: 0.6s;
+                    margin-bottom: 30px;
+                    height: 100%;
                     &:hover{
         
                         cursor: pointer;

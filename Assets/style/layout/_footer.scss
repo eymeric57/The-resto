@@ -1,13 +1,18 @@
 footer{
+   
     .map{
 
         height: 440px;
-        background:url(/Assets/img/gmap.jpg);      
+        background:url(/Assets/img/gmap.jpg);     
+       
 
     }
 }
 .baniere-footer{
     background:url(/Assets/img/bg-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 330PX;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -27,6 +32,10 @@ footer{
         font-size: 1.2rem;
         font-family: roboto;
         line-height: 35px;
+        @media screen and (max-width: 1400px){
+            margin-left: 50px;
+            font-size: 1rem;
+        }
         @media screen and (max-width: 850px){
             display: none;
         }
