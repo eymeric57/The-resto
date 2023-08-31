@@ -152,11 +152,17 @@ section#discover {
 
 
         }
+        @media screen and (max-width: 850px){
+            margin-top: -300px;
+             
+              
+          }
         @media screen and (max-width: 1050px){
             display: block; 
             width: 80%;
              
          }
+        
                         
                     }
 
@@ -172,6 +178,11 @@ section#discover {
             @media screen and (max-width: 1050px){
                 height: 150px;
             }
+            @media screen and (max-width: 850px){
+                margin-top: 0;
+                 
+                  
+              }
 
             .left-it {
                 width: 25%;

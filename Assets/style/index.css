@@ -360,6 +360,11 @@ section#discover .back-container {
     margin: auto;
   }
 }
+@media screen and (max-width: 850px) {
+  .food-container {
+    margin-top: -300px;
+  }
+}
 @media screen and (max-width: 1050px) {
   .food-container {
     display: block;
@@ -378,6 +383,11 @@ section#discover .back-container {
 @media screen and (max-width: 1050px) {
   .food {
     height: 150px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .food {
+    margin-top: 0;
   }
 }
 .food .left-it {
