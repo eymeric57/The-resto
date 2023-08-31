@@ -363,6 +363,7 @@ section#discover .back-container {
 @media screen and (max-width: 850px) {
   .food-container {
     margin-top: -300px;
+    height: 1300px;
   }
 }
 @media screen and (max-width: 1050px) {
@@ -459,6 +460,11 @@ section#booking-event {
     height: 1332px;
   }
 }
+@media screen and (max-width: 850px) {
+  section#booking-event {
+    height: 1413px;
+  }
+}
 section#booking-event .booking-container {
   display: grid;
   grid-template-columns: 30% 70%;
@@ -470,6 +476,11 @@ section#booking-event .booking-container {
 @media screen and (max-width: 1050px) {
   section#booking-event .booking-container {
     grid-template-columns: 40% 70%;
+  }
+}
+@media screen and (max-width: 970px) {
+  section#booking-event .booking-container {
+    margin-bottom: 180px;
   }
 }
 @media screen and (max-width: 850px) {
@@ -552,6 +563,11 @@ section#booking-event .booking-container .right-booking-container {
 @media screen and (max-width: 850px) {
   section#booking-event .booking-container .right-booking-container {
     height: 600px;
+  }
+}
+@media screen and (max-width: 550px) {
+  section#booking-event .booking-container .right-booking-container {
+    height: 650px;
   }
 }
 section#booking-event .booking-container .right-booking-container h4 {
@@ -888,6 +904,12 @@ section#pub-ceo {
   height: 430px;
   position: relative;
 }
+@media screen and (max-width: 970px) {
+  section#pub-ceo {
+    margin-top: 37px;
+    height: 330px;
+  }
+}
 section#pub-ceo .pub1 {
   width: 65%;
   top: 320px;
@@ -904,9 +926,15 @@ section#pub-ceo .pub1 {
     height: 500px;
   }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 970px) {
   section#pub-ceo .pub1 {
     height: 500px;
+  }
+}
+@media screen and (max-width: 850px) {
+  section#pub-ceo .pub1 {
+    height: 600px;
+    margin-top: -200px;
   }
 }
 section#pub-ceo .pub1 img {
@@ -1053,6 +1081,7 @@ footer .map {
   .baniere-footer {
     display: block;
     height: 355px;
+    background: rgb(33, 32, 30);
   }
 }
 .baniere-footer .end-text {
@@ -1092,6 +1121,11 @@ footer .map {
   margin-left: 75px;
   margin-top: 80px;
 }
+@media screen and (max-width: 850px) {
+  .baniere-footer .contact .news {
+    margin-left: 5px;
+  }
+}
 .baniere-footer .contact .news h2 {
   font-family: poppins;
   color: rgb(241, 239, 239);
@@ -1105,6 +1139,12 @@ footer .map {
   background: none;
   border: solid 1px rgba(223, 146, 74, 0.856);
   font-size: 1rem;
+  color: rgb(241, 239, 239);
+}
+@media screen and (max-width: 850px) {
+  .baniere-footer .contact .news input {
+    width: 80%;
+  }
 }
 .baniere-footer .contact .follows {
   margin-left: 75px;
@@ -1112,6 +1152,11 @@ footer .map {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 850px) {
+  .baniere-footer .contact .follows {
+    margin-left: 5px;
+  }
 }
 .baniere-footer .contact .follows h3 {
   color: rgb(241, 239, 239);
@@ -1122,4 +1167,15 @@ footer .map {
 .baniere-footer .contact .follows i {
   padding-left: 45px;
   color: gray;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+@media screen and (max-width: 850px) {
+  .baniere-footer .contact .follows i {
+    padding-left: 20px;
+  }
+}
+.baniere-footer .contact .follows i:hover {
+  scale: 1.2;
+  color: white;
 }/*# sourceMappingURL=index.css.map */

@@ -20,6 +20,7 @@ footer{
     @media screen and (max-width: 850px){
         display: block;
         height: 355px;
+        background: rgb(33,32,30);
     }
     
 
@@ -57,13 +58,15 @@ footer{
     .contact{
         display: grid;
         grid-template-rows: 1fr 1fr;
-        @media screen and (max-width: 850px){
-            
-        }
+      
       
         .news{
             margin-left: 75px;
             margin-top: 80px;
+            @media screen and (max-width: 850px){
+                margin-left: 5px;
+                 
+             }
             h2{
                 font-family: poppins;
                 color: $white1;
@@ -77,6 +80,11 @@ footer{
                 background: none;
                 border: solid 1px $doré;
                 font-size: 1rem;
+                color: $white1;
+                @media screen and (max-width: 850px){
+                    width: 80%;
+                     
+                 }
                 
             }
         }
@@ -84,6 +92,10 @@ footer{
             margin-left: 75px;
             margin-top: 60px;
             display: flex;
+            @media screen and (max-width: 850px){
+                margin-left: 5px;
+                 
+             }
             h3{
                 color: $white1;
                 font-family: roboto;
@@ -95,8 +107,16 @@ footer{
             
                 padding-left: 45px;
                 color: gray;
+                transition: 0.8s;
+                @media screen and (max-width: 850px){
+                    padding-left: 20px;
+                     
+                 }
                 
-                
+                &:hover{
+                    scale: 1.2;
+                    color: white;
+                }
             }
 
         }
