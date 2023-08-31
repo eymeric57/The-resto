@@ -12,6 +12,11 @@ body {
   text-align: center;
   margin-top: 200px;
 }
+@media screen and (max-width: 850px) {
+  .header-container {
+    margin-top: 25px;
+  }
+}
 .header-container h2 {
   font-family: allura;
   font-size: 3.5rem;
@@ -221,6 +226,11 @@ nav#second ul li {
     width: 80%;
   }
 }
+@media screen and (max-width: 1050px) {
+  nav#second ul li {
+    font-size: 0.9rem;
+  }
+}
 
 li:hover {
   scale: 1.2;
@@ -410,6 +420,12 @@ section#discover .back-container {
     margin-top: 25px;
   }
 }
+@media screen and (max-width: 425px) {
+  .food .left-it img {
+    height: 60px;
+    margin-top: 40px;
+  }
+}
 .food .right-it {
   width: 85%;
   margin-top: 78px;
@@ -436,6 +452,11 @@ section#discover .back-container {
   font-family: roboto;
   font-weight: 100;
 }
+@media screen and (max-width: 1050px) {
+  .food p#recipe {
+    font-size: 1rem;
+  }
+}
 .food .price {
   margin-top: 100px;
   margin-left: 12px;
@@ -448,6 +469,11 @@ section#discover .back-container {
 @media screen and (max-width: 850px) {
   .food .price {
     font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .food .price {
+    margin-top: 70px;
   }
 }
 
