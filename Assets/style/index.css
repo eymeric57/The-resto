@@ -347,6 +347,11 @@ section#discover .back-container {
     height: 1100px;
   }
 }
+@media screen and (max-width: 850px) {
+  section#discover .back-container {
+    height: 900px;
+  }
+}
 
 .food-container {
   display: grid;
