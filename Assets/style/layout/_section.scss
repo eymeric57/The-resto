@@ -529,7 +529,7 @@ section#event {
             }
 
             .event1 {
-                background: rgb(241, 239, 239);
+                background: rgb(244, 239, 239);
                 width: 100%;
 
                 h1 {
@@ -605,6 +605,7 @@ section#event {
         .text2cont {
             background: rgb(241, 239, 239);
             margin: 30px;
+            height: 85%;
         }
 
         button#date {
@@ -619,6 +620,7 @@ section#event {
         .event2 {
             text-align: center;
             background-color: rgb(241, 239, 239);
+
             
 
             h1 {
@@ -652,7 +654,7 @@ section#event {
 
             button#eventbutton {
                 
-                    margin-top: 65px;
+                    margin-top: 70px;
                     background: none;
                     color: $black;
                     font-weight: 100;
@@ -672,9 +674,9 @@ section#event {
                         text-align: center;
                         animation: hoveranim 1s ease-in-out ;
                         border-radius: 50px;
-                        padding: 8px;
-                        margin-top: 87px;
-                        margin-bottom: 42px;
+                        padding:8px;
+                        
+                       
 
                         @keyframes hoveranim {
                             0% {

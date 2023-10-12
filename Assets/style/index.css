@@ -702,7 +702,7 @@ section#event .event-container .first-container .img {
   height: 235px;
 }
 section#event .event-container .first-container .event1 {
-  background: rgb(241, 239, 239);
+  background: rgb(244, 239, 239);
   width: 100%;
 }
 section#event .event-container .first-container .event1 h1 {
@@ -774,6 +774,7 @@ section#event .second-container {
 section#event .second-container .text2cont {
   background: rgb(241, 239, 239);
   margin: 30px;
+  height: 85%;
 }
 section#event .second-container button#date {
   margin-top: 30px;
@@ -816,7 +817,7 @@ section#event .second-container .event2 p i {
   font-size: 0.8rem;
 }
 section#event .second-container .event2 button#eventbutton {
-  margin-top: 65px;
+  margin-top: 70px;
   background: none;
   color: rgb(15, 15, 15);
   font-weight: 100;
@@ -840,8 +841,6 @@ section#event .second-container .event2 button#eventbutton:hover {
           animation: hoveranim 1s ease-in-out;
   border-radius: 50px;
   padding: 8px;
-  margin-top: 87px;
-  margin-bottom: 42px;
 }
 @keyframes hoveranim {
   0% {
