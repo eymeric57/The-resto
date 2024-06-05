@@ -89,12 +89,12 @@ body {
     background-size: cover;
   }
   33% {
-    background: url(/Assets/img/bg-slider-05.jpg);
+    background: url(./Assets/img/bg-slider-05.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
   66% {
-    background: url(/Assets/img/bg-slider-06.jpg);
+    background: url(./Assets/img/bg-slider-06.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -102,7 +102,7 @@ body {
 @media screen and (max-width: 1050px) {
   @-webkit-keyframes animate {
     0%, 100% {
-      background: url(/Assets/img/bg-slider-06.jpg);
+      background: url(./Assets/img/bg-slider-06.jpg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -110,7 +110,7 @@ body {
   }
   @keyframes animate {
     0%, 100% {
-      background: url(/Assets/img/bg-slider-06.jpg);
+      background: url(./Assets/img/bg-slider-06.jpg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -304,7 +304,7 @@ section#store .discover-store .store-left .chef p {
   color: rgba(138, 137, 137, 0.493);
 }
 section#store .discover-store .store-right {
-  background: url(/Assets/img/store-01.jpg);
+  background: url(./Assets/img/store-01.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -337,7 +337,7 @@ section#discover .top-discover img#plate2 {
 }
 section#discover .back-container {
   width: 100%;
-  background: url(/Assets/img/bg-menu-01.jpg);
+  background: url(./Assets/img/bg-menu-01.jpg);
   position: relative;
   height: 810px;
   background-size: cover;
@@ -696,7 +696,7 @@ section#event .event-container .first-container {
   margin-left: 15px;
 }
 section#event .event-container .first-container .img {
-  background: url(/Assets/img/event-01.jpg);
+  background: url(./Assets/img/event-01.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 235px;
@@ -768,7 +768,7 @@ section#event .event-container .first-container .event1 button#eventbtn:hover {
   }
 }
 section#event .second-container {
-  background: url(/Assets/img/event-03.jpg);
+  background: url(./Assets/img/event-03.jpg);
   grid-area: two;
 }
 section#event .second-container .text2cont {
@@ -859,7 +859,7 @@ section#event .second-container .event2 button#eventbutton:hover {
   margin-left: 15px;
 }
 .third-container .img {
-  background: url(/Assets/img/event-02.jpg);
+  background: url(./Assets/img/event-02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 235px;
@@ -1094,11 +1094,11 @@ input {
 
 footer .map {
   height: 440px;
-  background: url(/Assets/img/gmap.jpg);
+  background: url(./Assets/img/gmap.jpg);
 }
 
 .baniere-footer {
-  background: url(/Assets/img/bg-footer.jpg);
+  background: url(./Assets/img/bg-footer.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
