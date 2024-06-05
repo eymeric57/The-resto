@@ -84,12 +84,12 @@ body {
 }
 @keyframes animate {
   0%, 100% {
-    background: url(../img/bg-jpg-01.jpg);
+    background: url(../img/bg-slider-01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
   33% {
-    background: url(../img/bg--05.jpg);
+    background: url(../img/bg-slider-05.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
