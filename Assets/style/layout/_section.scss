@@ -78,7 +78,7 @@ section#store {
         }
 
         .store-right {
-            background: url(/Assets/img/store-01.jpg);
+            background: url(../../img/store-01.jpg);
             background-position: center;
             background-size: cover;
             @media screen and (max-width: 850px){
@@ -117,7 +117,7 @@ section#discover {
 
     .back-container {
         width: 100%;
-        background: url(/Assets/img/bg-menu-01.jpg);
+        background: url(../../img/bg-menu-01.jpg);
         position: relative;
         height: 810px;
         background-size: cover;
@@ -520,7 +520,7 @@ section#event {
             margin-left: 15px;
 
             .img {
-                background: url(/Assets/img/event-01.jpg);
+                background: url(../../img/event-01.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;
                 height: 235px;
@@ -598,7 +598,7 @@ section#event {
     }
 
     .second-container {
-        background: url(/Assets/img/event-03.jpg);
+        background: url(../../img/event-03.jpg);
         grid-area: two;
 
 
@@ -701,7 +701,7 @@ section#event {
         margin-left: 15px;
 
         .img {
-            background: url(/Assets/img/event-02.jpg);
+            background: url(../../img/event-02.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             height: 235px;
