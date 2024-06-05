@@ -67,17 +67,17 @@ body {
 }
 @-webkit-keyframes animate {
   0%, 100% {
-    background: url(/Assets/img/bg-slider-01.jpg);
+    background: url(./Assets/img/bg-slider-01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
   33% {
-    background: url(/Assets/img/bg-slider-05.jpg);
+    background: url(./Assets/img/bg-slider-05.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
   66% {
-    background: url(/Assets/img/bg-slider-06.jpg);
+    background: url(./Assets/img/bg-slider-06.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
